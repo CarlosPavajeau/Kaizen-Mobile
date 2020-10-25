@@ -7,4 +7,15 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="biscay">#FF172A63</color>
+    <color name="blue_zodiac">#FF142454</color>
+    <color name="bunting">#FF162250</color>
+    <color name="beryl_green">#FFE4E6C3</color>
+    <color name="pampas">#FFF7F7F2</color>
+    <color name="genoa">#FF157A6E</color>
+    <color name="shark">#FF1B2021</color>
+    <color name="link_water">#FFD8DFF6</color>
+    <color name="cerulean_blue">#FF3058CF</color>
+    <color name="mid_gray">#FF5B5D63</color>
 </resources>
