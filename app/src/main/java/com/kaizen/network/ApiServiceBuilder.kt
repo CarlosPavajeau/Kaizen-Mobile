@@ -15,6 +15,5 @@ object ApiServiceBuilder {
 
     fun <T> buildApiService(apiService: Class<T>): T {
         return retrofit.create(apiService)
-        return retrofit.create(apiService)
     }
 }
