@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Kaizen</string>
+    <string name="login_title">Iniciar sesión</string>
+    <string name="user_or_email_hint">Usuario/Email</string>
+    <string name="user_or_email_text_helper">Digite su nombre de usuario o email</string>
+    <string name="password_helper_text">Digite su contraseña de acceso</string>
+    <string name="password_hint">Contraseña</string>
+    <string name="keep_session_hint">Matener sesión iniciada</string>
+    <string name="forgotten_password_text">¿Has olvidado tu contraseña?</string>
+    <string name="not_register_text">¿No estas registrado?</string>
 </resources>
