@@ -6,7 +6,7 @@ import com.kaizen.model.applicationuser.LoginRequest
 import com.kaizen.model.applicationuser.ResetPasswordModel
 import com.kaizen.network.ApiCallback
 import com.kaizen.network.ApiServiceBuilder
-import com.kaizen.network.ApplicationUsersAPI
+import com.kaizen.network.api.ApplicationUsersAPI
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

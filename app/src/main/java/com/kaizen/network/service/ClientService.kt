@@ -3,7 +3,7 @@ package com.kaizen.network.service
 import com.kaizen.model.client.Client
 import com.kaizen.network.ApiCallback
 import com.kaizen.network.ApiServiceBuilder
-import com.kaizen.network.ClientsAPI
+import com.kaizen.network.api.ClientsAPI
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

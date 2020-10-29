@@ -1,4 +1,4 @@
-package com.kaizen.network
+package com.kaizen.network.api
 
 import com.kaizen.model.applicationuser.ApplicationUser
 import com.kaizen.model.applicationuser.ChangePasswordRequest

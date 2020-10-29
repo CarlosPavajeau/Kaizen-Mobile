@@ -4,7 +4,7 @@ import com.kaizen.model.employee.Employee
 import com.kaizen.model.employee.EmployeeCharge
 import com.kaizen.network.ApiCallback
 import com.kaizen.network.ApiServiceBuilder
-import com.kaizen.network.EmployeesAPI
+import com.kaizen.network.api.EmployeesAPI
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

@@ -1,4 +1,4 @@
-package com.kaizen.network
+package com.kaizen.network.api
 
 import com.kaizen.model.inventory.Equipment
 import retrofit2.Call
