@@ -1,10 +1,9 @@
 package com.kaizen.network.service
 
-import android.app.Application
-import com.kaizen.model.ApplicationUser
-import com.kaizen.model.ChangePasswordRequest
-import com.kaizen.model.LoginRequest
-import com.kaizen.model.ResetPasswordModel
+import com.kaizen.model.applicationuser.ApplicationUser
+import com.kaizen.model.applicationuser.ChangePasswordRequest
+import com.kaizen.model.applicationuser.LoginRequest
+import com.kaizen.model.applicationuser.ResetPasswordModel
 import com.kaizen.network.ApiCallback
 import com.kaizen.network.ApiServiceBuilder
 import com.kaizen.network.ApplicationUsersAPI

@@ -1,6 +1,6 @@
 package com.kaizen.network
 
-import com.kaizen.model.Client
+import com.kaizen.model.client.Client
 import retrofit2.Call
 import retrofit2.http.*
 

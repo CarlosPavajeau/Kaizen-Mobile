@@ -1,6 +1,6 @@
 package com.kaizen.network.service
 
-import com.kaizen.model.Product
+import com.kaizen.model.inventory.Product
 import com.kaizen.network.ApiCallback
 import com.kaizen.network.ApiServiceBuilder
 import com.kaizen.network.ProductsAPI

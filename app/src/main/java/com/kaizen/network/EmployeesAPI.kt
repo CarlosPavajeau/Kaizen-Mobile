@@ -1,7 +1,7 @@
 package com.kaizen.network
 
-import com.kaizen.model.Employee
-import com.kaizen.model.EmployeeCharge
+import com.kaizen.model.employee.Employee
+import com.kaizen.model.employee.EmployeeCharge
 import retrofit2.Call
 import retrofit2.http.*
 import java.util.*

@@ -1,8 +1,8 @@
-package com.kaizen.model
+package com.kaizen.model.client
 
 enum class ClientState {
     Pending,
-    Acceptep,
+    Accepted,
     Rejected,
     Active,
     Casual,

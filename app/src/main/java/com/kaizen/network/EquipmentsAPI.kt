@@ -1,6 +1,6 @@
 package com.kaizen.network
 
-import com.kaizen.model.Equipment
+import com.kaizen.model.inventory.Equipment
 import retrofit2.Call
 import retrofit2.http.*
 

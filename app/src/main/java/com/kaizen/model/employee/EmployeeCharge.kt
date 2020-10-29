@@ -1,4 +1,4 @@
-package com.kaizen.model
+package com.kaizen.model.employee
 
 import com.google.gson.annotations.SerializedName
 

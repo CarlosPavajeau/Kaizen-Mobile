@@ -1,7 +1,7 @@
 package com.kaizen.network.service
 
-import com.kaizen.model.Employee
-import com.kaizen.model.EmployeeCharge
+import com.kaizen.model.employee.Employee
+import com.kaizen.model.employee.EmployeeCharge
 import com.kaizen.network.ApiCallback
 import com.kaizen.network.ApiServiceBuilder
 import com.kaizen.network.EmployeesAPI

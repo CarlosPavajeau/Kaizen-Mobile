@@ -1,6 +1,6 @@
 package com.kaizen.network.service
 
-import com.kaizen.model.Equipment
+import com.kaizen.model.inventory.Equipment
 import com.kaizen.network.ApiCallback
 import com.kaizen.network.ApiServiceBuilder
 import com.kaizen.network.EquipmentsAPI

@@ -1,8 +1,8 @@
 package com.kaizen.viewmodel
 
 import androidx.lifecycle.ViewModel
-import com.kaizen.model.Employee
-import com.kaizen.model.EmployeeCharge
+import com.kaizen.model.employee.Employee
+import com.kaizen.model.employee.EmployeeCharge
 import com.kaizen.network.ApiCallback
 import com.kaizen.network.service.EmployeeService
 import java.util.*

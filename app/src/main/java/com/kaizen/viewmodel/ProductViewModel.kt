@@ -1,7 +1,7 @@
 package com.kaizen.viewmodel
 
 import androidx.lifecycle.ViewModel
-import com.kaizen.model.Product
+import com.kaizen.model.inventory.Product
 import com.kaizen.network.ApiCallback
 import com.kaizen.network.service.ProductService
 
