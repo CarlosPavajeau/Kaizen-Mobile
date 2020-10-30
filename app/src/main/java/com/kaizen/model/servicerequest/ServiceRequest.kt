@@ -6,9 +6,11 @@ import com.kaizen.model.service.Service
 import java.util.*
 
 data class ServiceRequest(
-    @SerializedName("code") val code: Int,
     @SerializedName("date") val date: Date
 ) {
+    @SerializedName("code")
+    var code: Int = 0
+
     @SerializedName("clientId")
     lateinit var clientId: String
 
