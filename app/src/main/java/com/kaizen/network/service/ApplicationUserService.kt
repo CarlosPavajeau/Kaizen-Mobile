@@ -6,10 +6,8 @@ import com.kaizen.model.applicationuser.LoginRequest
 import com.kaizen.model.applicationuser.ResetPasswordModel
 import com.kaizen.network.ApiCallback
 import com.kaizen.network.ApiServiceBuilder
+import com.kaizen.network.Callback
 import com.kaizen.network.api.ApplicationUsersAPI
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 
 class ApplicationUserService {
     private val applicationUsersAPI =
@@ -19,105 +17,27 @@ class ApplicationUserService {
         applicationUser: ApplicationUser,
         apiCallback: ApiCallback<ApplicationUser>
     ) {
-        applicationUsersAPI.saveApplicationUser(applicationUser).enqueue(
-            object : Callback<ApplicationUser> {
-                override fun onResponse(
-                    call: Call<ApplicationUser>,
-                    response: Response<ApplicationUser>
-                ) {
-                    apiCallback.onResponse(response.body())
-                }
-
-                override fun onFailure(call: Call<ApplicationUser>, t: Throwable) {
-                    apiCallback.onFailure(t)
-                }
-
-            }
-        )
+        applicationUsersAPI.saveApplicationUser(applicationUser).enqueue(Callback(apiCallback))
     }
 
     fun login(loginRequest: LoginRequest, apiCallback: ApiCallback<ApplicationUser>) {
-        applicationUsersAPI.login(loginRequest).enqueue(
-            object : Callback<ApplicationUser> {
-                override fun onResponse(
-                    call: Call<ApplicationUser>,
-                    response: Response<ApplicationUser>
-                ) {
-                    apiCallback.onResponse(response.body())
-                }
-
-                override fun onFailure(call: Call<ApplicationUser>, t: Throwable) {
-                    apiCallback.onFailure(t)
-                }
-
-            }
-        )
+        applicationUsersAPI.login(loginRequest).enqueue(Callback(apiCallback))
     }
 
     fun confirmEmail(email: String, token: String, apiCallback: ApiCallback<ApplicationUser>) {
-        applicationUsersAPI.confirmEmail(email, token).enqueue(
-            object : Callback<ApplicationUser> {
-                override fun onResponse(
-                    call: Call<ApplicationUser>,
-                    response: Response<ApplicationUser>
-                ) {
-                    apiCallback.onResponse(response.body())
-                }
-
-                override fun onFailure(call: Call<ApplicationUser>, t: Throwable) {
-                    apiCallback.onFailure(t)
-                }
-
-            }
-        )
+        applicationUsersAPI.confirmEmail(email, token).enqueue(Callback(apiCallback))
     }
 
     fun forgottenPassword(usernameOrEmail: String, apiCallback: ApiCallback<Boolean>) {
-        applicationUsersAPI.forgottenPassword(usernameOrEmail).enqueue(
-            object : Callback<Boolean> {
-                override fun onResponse(call: Call<Boolean>, response: Response<Boolean>) {
-                    apiCallback.onResponse(response.body())
-                }
-
-                override fun onFailure(call: Call<Boolean>, t: Throwable) {
-                    apiCallback.onFailure(t)
-                }
-
-            }
-        )
+        applicationUsersAPI.forgottenPassword(usernameOrEmail).enqueue(Callback(apiCallback))
     }
 
     fun getUser(id: String, apiCallback: ApiCallback<ApplicationUser>) {
-        applicationUsersAPI.getUser(id).enqueue(
-            object : Callback<ApplicationUser> {
-                override fun onResponse(
-                    call: Call<ApplicationUser>,
-                    response: Response<ApplicationUser>
-                ) {
-                    apiCallback.onResponse(response.body())
-                }
-
-                override fun onFailure(call: Call<ApplicationUser>, t: Throwable) {
-                    apiCallback.onFailure(t)
-                }
-
-            }
-        )
+        applicationUsersAPI.getUser(id).enqueue(Callback(apiCallback))
     }
 
     fun checkExists(usernameOrEmailOrPhone: String, apiCallback: ApiCallback<Boolean>) {
-        applicationUsersAPI.checkExists(usernameOrEmailOrPhone).enqueue(
-            object : Callback<Boolean> {
-                override fun onResponse(call: Call<Boolean>, response: Response<Boolean>) {
-                    apiCallback.onResponse(response.body())
-                }
-
-                override fun onFailure(call: Call<Boolean>, t: Throwable) {
-                    apiCallback.onFailure(t)
-                }
-
-            }
-        )
+        applicationUsersAPI.checkExists(usernameOrEmailOrPhone).enqueue(Callback(apiCallback))
     }
 
     fun changePassword(
@@ -125,21 +45,7 @@ class ApplicationUserService {
         changePasswordRequest: ChangePasswordRequest,
         apiCallback: ApiCallback<ApplicationUser>
     ) {
-        applicationUsersAPI.changePassword(id, changePasswordRequest).enqueue(
-            object : Callback<ApplicationUser> {
-                override fun onResponse(
-                    call: Call<ApplicationUser>,
-                    response: Response<ApplicationUser>
-                ) {
-                    apiCallback.onResponse(response.body())
-                }
-
-                override fun onFailure(call: Call<ApplicationUser>, t: Throwable) {
-                    apiCallback.onFailure(t)
-                }
-
-            }
-        )
+        applicationUsersAPI.changePassword(id, changePasswordRequest).enqueue(Callback(apiCallback))
     }
 
     fun resetPassword(
@@ -147,20 +53,7 @@ class ApplicationUserService {
         resetPasswordModel: ResetPasswordModel,
         apiCallback: ApiCallback<ApplicationUser>
     ) {
-        applicationUsersAPI.resetPassword(usernameOrEmail, resetPasswordModel).enqueue(
-            object : Callback<ApplicationUser> {
-                override fun onResponse(
-                    call: Call<ApplicationUser>,
-                    response: Response<ApplicationUser>
-                ) {
-                    apiCallback.onResponse(response.body())
-                }
-
-                override fun onFailure(call: Call<ApplicationUser>, t: Throwable) {
-                    apiCallback.onFailure(t)
-                }
-
-            }
-        )
+        applicationUsersAPI.resetPassword(usernameOrEmail, resetPasswordModel)
+            .enqueue(Callback(apiCallback))
     }
 }
