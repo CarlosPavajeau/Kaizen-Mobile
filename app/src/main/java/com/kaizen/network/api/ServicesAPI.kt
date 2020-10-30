@@ -1,7 +1,7 @@
 package com.kaizen.network.api
 
-import com.kaizen.model.services.Service
-import com.kaizen.model.services.ServiceType
+import com.kaizen.model.service.Service
+import com.kaizen.model.service.ServiceType
 import retrofit2.Call
 import retrofit2.http.*
 

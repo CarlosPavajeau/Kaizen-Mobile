@@ -1,4 +1,4 @@
-package com.kaizen.model.services
+package com.kaizen.model.service
 
 import com.google.gson.annotations.SerializedName
 

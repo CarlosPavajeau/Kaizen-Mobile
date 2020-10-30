@@ -1,8 +1,8 @@
 package com.kaizen.viewmodel
 
 import androidx.lifecycle.ViewModel
-import com.kaizen.model.services.Service
-import com.kaizen.model.services.ServiceType
+import com.kaizen.model.service.Service
+import com.kaizen.model.service.ServiceType
 import com.kaizen.network.ApiCallback
 import com.kaizen.network.service.ServiceService
 
