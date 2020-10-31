@@ -1,12 +1,13 @@
 package com.kaizen.viewmodel
 
+import android.content.Context
 import androidx.lifecycle.ViewModel
 import com.kaizen.model.inventory.Equipment
 import com.kaizen.network.ApiCallback
 import com.kaizen.network.service.EquipmentService
 
-class EquipmentViewModel : ViewModel() {
-    private val equipmentService = EquipmentService()
+class EquipmentViewModel(context: Context) : ViewModel() {
+    private val equipmentService = EquipmentService(context)
 
     fun saveEquipment(equipment: Equipment, apiCallback: ApiCallback<Equipment>) {
         equipmentService.saveEquipment(equipment, apiCallback)

@@ -1,12 +1,13 @@
 package com.kaizen.viewmodel
 
+import android.content.Context
 import androidx.lifecycle.ViewModel
 import com.kaizen.model.client.Client
 import com.kaizen.network.ApiCallback
 import com.kaizen.network.service.ClientService
 
-class ClientViewModel : ViewModel() {
-    private val clientService = ClientService()
+class ClientViewModel(context: Context) : ViewModel() {
+    private val clientService = ClientService(context)
 
     fun saveClient(client: Client, apiCallback: ApiCallback<Client>) {
         clientService.saveClient(client, apiCallback)

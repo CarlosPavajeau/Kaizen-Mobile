@@ -1,13 +1,14 @@
 package com.kaizen.viewmodel
 
+import android.content.Context
 import androidx.lifecycle.ViewModel
 import com.kaizen.model.workorder.Sector
 import com.kaizen.model.workorder.WorkOrder
 import com.kaizen.network.ApiCallback
 import com.kaizen.network.service.WorkOrderService
 
-class WorkOrderViewModel : ViewModel() {
-    private val workOrderService = WorkOrderService()
+class WorkOrderViewModel(context: Context) : ViewModel() {
+    private val workOrderService = WorkOrderService(context)
 
     fun saveWorkOrder(workOrder: WorkOrder, apiCallback: ApiCallback<WorkOrder>) {
         workOrderService.saveWorkOrder(workOrder, apiCallback)

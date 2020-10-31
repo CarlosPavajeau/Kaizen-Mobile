@@ -1,13 +1,14 @@
 package com.kaizen.viewmodel
 
+import android.content.Context
 import androidx.lifecycle.ViewModel
 import com.kaizen.model.activityschedule.Activity
 import com.kaizen.network.ApiCallback
 import com.kaizen.network.service.ActivityService
 import java.util.*
 
-class ActivityViewModel : ViewModel() {
-    private val activityService = ActivityService()
+class ActivityViewModel(context: Context) : ViewModel() {
+    private val activityService = ActivityService(context)
 
     fun saveActivity(activity: Activity, apiCallback: ApiCallback<Activity>) {
         activityService.saveActivity(activity, apiCallback)

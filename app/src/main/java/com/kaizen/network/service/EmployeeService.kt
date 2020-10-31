@@ -1,5 +1,6 @@
 package com.kaizen.network.service
 
+import android.content.Context
 import com.kaizen.model.employee.Employee
 import com.kaizen.model.employee.EmployeeCharge
 import com.kaizen.network.ApiCallback
@@ -8,8 +9,8 @@ import com.kaizen.network.Callback
 import com.kaizen.network.api.EmployeesAPI
 import java.util.*
 
-class EmployeeService {
-    private val employeesAPI = ApiServiceBuilder.buildApiService(EmployeesAPI::class.java)
+class EmployeeService(context: Context) {
+    private val employeesAPI = ApiServiceBuilder.buildApiService(EmployeesAPI::class.java, context)
 
     fun saveEmployee(employee: Employee, apiCallback: ApiCallback<Employee>) {
         employeesAPI.saveEmployee(employee).enqueue(Callback(apiCallback))

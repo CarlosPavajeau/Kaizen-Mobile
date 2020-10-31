@@ -1,14 +1,15 @@
 package com.kaizen.network.service
 
+import android.content.Context
 import com.kaizen.model.servicerequest.ServiceRequest
 import com.kaizen.network.ApiCallback
 import com.kaizen.network.ApiServiceBuilder
 import com.kaizen.network.Callback
 import com.kaizen.network.api.ServiceRequestsAPI
 
-class ServiceRequestService {
+class ServiceRequestService(context: Context) {
     private val serviceRequestsApi =
-        ApiServiceBuilder.buildApiService(ServiceRequestsAPI::class.java)
+        ApiServiceBuilder.buildApiService(ServiceRequestsAPI::class.java, context)
 
     fun saveServiceRequest(
         serviceRequest: ServiceRequest,

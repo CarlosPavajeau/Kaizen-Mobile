@@ -1,5 +1,6 @@
 package com.kaizen.network.service
 
+import android.content.Context
 import com.kaizen.model.applicationuser.ApplicationUser
 import com.kaizen.model.applicationuser.ChangePasswordRequest
 import com.kaizen.model.applicationuser.LoginRequest
@@ -9,9 +10,9 @@ import com.kaizen.network.ApiServiceBuilder
 import com.kaizen.network.Callback
 import com.kaizen.network.api.ApplicationUsersAPI
 
-class ApplicationUserService {
+class ApplicationUserService(context: Context) {
     private val applicationUsersAPI =
-        ApiServiceBuilder.buildApiService(ApplicationUsersAPI::class.java)
+        ApiServiceBuilder.buildApiService(ApplicationUsersAPI::class.java, context)
 
     fun saveApplicationUser(
         applicationUser: ApplicationUser,

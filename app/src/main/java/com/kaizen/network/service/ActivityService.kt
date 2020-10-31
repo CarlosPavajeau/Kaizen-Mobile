@@ -1,5 +1,6 @@
 package com.kaizen.network.service
 
+import android.content.Context
 import com.kaizen.model.activityschedule.Activity
 import com.kaizen.network.ApiCallback
 import com.kaizen.network.ApiServiceBuilder
@@ -7,8 +8,9 @@ import com.kaizen.network.Callback
 import com.kaizen.network.api.ActivitiesAPI
 import java.util.*
 
-class ActivityService {
-    private val activitiesApi = ApiServiceBuilder.buildApiService(ActivitiesAPI::class.java)
+class ActivityService(context: Context) {
+    private val activitiesApi =
+        ApiServiceBuilder.buildApiService(ActivitiesAPI::class.java, context)
 
     fun saveActivity(activity: Activity, apiCallback: ApiCallback<Activity>) {
         activitiesApi.saveActivity(activity).enqueue(Callback(apiCallback))

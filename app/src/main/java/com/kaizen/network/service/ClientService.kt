@@ -1,13 +1,14 @@
 package com.kaizen.network.service
 
+import android.content.Context
 import com.kaizen.model.client.Client
 import com.kaizen.network.ApiCallback
 import com.kaizen.network.ApiServiceBuilder
 import com.kaizen.network.Callback
 import com.kaizen.network.api.ClientsAPI
 
-class ClientService {
-    private val clientsAPI = ApiServiceBuilder.buildApiService(ClientsAPI::class.java)
+class ClientService(context: Context) {
+    private val clientsAPI = ApiServiceBuilder.buildApiService(ClientsAPI::class.java, context)
 
     fun saveClient(client: Client, apiCallback: ApiCallback<Client>) {
         clientsAPI.saveClient(client).enqueue(Callback(apiCallback))

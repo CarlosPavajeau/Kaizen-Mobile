@@ -1,5 +1,6 @@
 package com.kaizen.network.service
 
+import android.content.Context
 import com.kaizen.model.workorder.Sector
 import com.kaizen.model.workorder.WorkOrder
 import com.kaizen.network.ApiCallback
@@ -7,8 +8,8 @@ import com.kaizen.network.ApiServiceBuilder
 import com.kaizen.network.Callback
 import com.kaizen.network.api.WorkOrdersAPI
 
-class WorkOrderService {
-    private val workOrderApi = ApiServiceBuilder.buildApiService(WorkOrdersAPI::class.java)
+class WorkOrderService(context: Context) {
+    private val workOrderApi = ApiServiceBuilder.buildApiService(WorkOrdersAPI::class.java, context)
 
     fun saveWorkOrder(workOrder: WorkOrder, apiCallback: ApiCallback<WorkOrder>) {
         workOrderApi.saveWorkOrder(workOrder).enqueue(Callback(apiCallback))

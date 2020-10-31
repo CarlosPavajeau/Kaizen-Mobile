@@ -1,5 +1,6 @@
 package com.kaizen.network.service
 
+import android.content.Context
 import com.kaizen.model.service.Service
 import com.kaizen.model.service.ServiceType
 import com.kaizen.network.ApiCallback
@@ -7,8 +8,8 @@ import com.kaizen.network.ApiServiceBuilder
 import com.kaizen.network.Callback
 import com.kaizen.network.api.ServicesAPI
 
-class ServiceService {
-    private val servicesApi = ApiServiceBuilder.buildApiService(ServicesAPI::class.java)
+class ServiceService(context: Context) {
+    private val servicesApi = ApiServiceBuilder.buildApiService(ServicesAPI::class.java, context)
 
     fun saveService(service: Service, apiCallback: ApiCallback<Service>) {
         servicesApi.saveService(service).enqueue(Callback(apiCallback))

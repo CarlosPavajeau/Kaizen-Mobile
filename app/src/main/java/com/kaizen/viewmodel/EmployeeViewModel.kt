@@ -1,5 +1,6 @@
 package com.kaizen.viewmodel
 
+import android.content.Context
 import androidx.lifecycle.ViewModel
 import com.kaizen.model.employee.Employee
 import com.kaizen.model.employee.EmployeeCharge
@@ -7,8 +8,8 @@ import com.kaizen.network.ApiCallback
 import com.kaizen.network.service.EmployeeService
 import java.util.*
 
-class EmployeeViewModel : ViewModel() {
-    private val employeeService = EmployeeService()
+class EmployeeViewModel(context: Context) : ViewModel() {
+    private val employeeService = EmployeeService(context)
 
     fun saveEmployee(employee: Employee, apiCallback: ApiCallback<Employee>) {
         employeeService.saveEmployee(employee, apiCallback)

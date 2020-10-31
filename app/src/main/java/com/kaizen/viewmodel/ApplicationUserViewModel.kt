@@ -1,5 +1,6 @@
 package com.kaizen.viewmodel
 
+import android.content.Context
 import androidx.lifecycle.ViewModel
 import com.kaizen.model.applicationuser.ApplicationUser
 import com.kaizen.model.applicationuser.ChangePasswordRequest
@@ -8,8 +9,8 @@ import com.kaizen.model.applicationuser.ResetPasswordModel
 import com.kaizen.network.ApiCallback
 import com.kaizen.network.service.ApplicationUserService
 
-class ApplicationUserViewModel : ViewModel() {
-    private val applicationUserService = ApplicationUserService()
+class ApplicationUserViewModel(context: Context) : ViewModel() {
+    private val applicationUserService = ApplicationUserService(context)
 
     fun saveApplicationUser(
         applicationUser: ApplicationUser,

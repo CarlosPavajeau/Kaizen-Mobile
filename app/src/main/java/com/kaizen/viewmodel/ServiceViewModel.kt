@@ -1,13 +1,14 @@
 package com.kaizen.viewmodel
 
+import android.content.Context
 import androidx.lifecycle.ViewModel
 import com.kaizen.model.service.Service
 import com.kaizen.model.service.ServiceType
 import com.kaizen.network.ApiCallback
 import com.kaizen.network.service.ServiceService
 
-class ServiceViewModel : ViewModel() {
-    private val serviceService = ServiceService()
+class ServiceViewModel(context: Context) : ViewModel() {
+    private val serviceService = ServiceService(context)
 
     fun saveService(service: Service, apiCallback: ApiCallback<Service>) {
         serviceService.saveService(service, apiCallback)
