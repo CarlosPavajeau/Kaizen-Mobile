@@ -8,4 +8,14 @@
     <string name="keep_session_hint">Matener sesión iniciada</string>
     <string name="forgotten_password_text">¿Has olvidado tu contraseña?</string>
     <string name="not_register_text">¿No estas registrado?</string>
+    <string name="schedule_menu_item_text">Cronograma</string>
+    <string name="clients_menu_item_text">Clientes</string>
+    <string name="employees_menu_item_text">Empleados</string>
+    <string name="inventory_menu_item_text">Inventario</string>
+    <string name="services_menu_item_text">Servicios</string>
+    <string name="schedule_client_menu_item_text">Agenda</string>
+    <string name="invoices_menu_item_text">Facturas</string>
+    <string name="certificates_menu_item_text">Certificados</string>
+    <string name="settings_menu_item_text">Configuración</string>
+    <string name="work_orders_menu_item_text">Ordenes de trabajo</string>
 </resources>

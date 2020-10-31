@@ -1,4 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/schedule_fragment"
+        android:contentDescription="@string/schedule_menu_item_text"
+        android:icon="@drawable/ic_baseline_schedule"
 
+        android:title="@string/schedule_menu_item_text" />
+    <item
+        android:id="@+id/clients_fragment"
+        android:icon="@drawable/ic_baseline_people"
+        android:title="@string/clients_menu_item_text" />
+    <item
+        android:id="@+id/employees_fragment"
+        android:icon="@drawable/ic_baseline_engineering"
+        android:title="@string/employees_menu_item_text" />
+    <item
+        android:id="@+id/inventory_fragment"
+        android:icon="@drawable/ic_baseline_handyman"
+        android:title="@string/inventory_menu_item_text" />
+    <item
+        android:id="@+id/services_fragment"
+        android:icon="@drawable/ic_baseline_assistant"
+        android:title="@string/services_menu_item_text" />
 </menu>

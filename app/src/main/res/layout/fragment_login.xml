@@ -73,8 +73,7 @@
                     android:id="@+id/sw_keep_session"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/extra_small_spacing"
-                    android:textColor="@color/mid_gray" />
+                    android:layout_marginEnd="@dimen/extra_small_spacing" />
 
                 <TextView
                     android:layout_width="wrap_content"

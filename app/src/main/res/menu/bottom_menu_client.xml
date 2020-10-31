@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
+    <item
+        android:id="@+id/schedule_fragment"
+        android:icon="@drawable/ic_baseline_event"
+        android:title="@string/schedule_client_menu_item_text" />
+    <item
+        android:id="@+id/invoices_fragment"
+        android:icon="@drawable/ic_baseline_payments"
+        android:title="@string/invoices_menu_item_text" />
+    <item
+        android:id="@+id/certificates_fragment"
+        android:icon="@drawable/ic_baseline_verified"
+        android:title="@string/certificates_menu_item_text" />
 </menu>
