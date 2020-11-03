@@ -1,6 +1,7 @@
 package com.kaizen.model.client
 
 import com.google.gson.annotations.SerializedName
+import com.kaizen.model.applicationuser.ApplicationUser
 
 data class Client(
     @SerializedName("id") val id: String,
@@ -15,6 +16,9 @@ data class Client(
 
     @SerializedName("userId")
     lateinit var userId: String
+
+    @SerializedName("user")
+    lateinit var user: ApplicationUser
 
     @SerializedName("clientType")
     lateinit var clientType: String
