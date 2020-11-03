@@ -1,10 +1,9 @@
 package com.kaizen.network.api
 
 import com.kaizen.model.inventory.Equipment
+import com.kaizen.network.ApiUrls.EQUIPMENTS_API_URL
 import retrofit2.Call
 import retrofit2.http.*
-
-private const val EQUIPMENTS_API_URL = "api/Equipments"
 
 interface EquipmentsAPI {
     @POST(EQUIPMENTS_API_URL)

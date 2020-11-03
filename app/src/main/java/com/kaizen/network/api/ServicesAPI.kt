@@ -2,10 +2,9 @@ package com.kaizen.network.api
 
 import com.kaizen.model.service.Service
 import com.kaizen.model.service.ServiceType
+import com.kaizen.network.ApiUrls.SERVICES_API_URL
 import retrofit2.Call
 import retrofit2.http.*
-
-private const val SERVICES_API_URL = "api/Services"
 
 interface ServicesAPI {
     @POST(SERVICES_API_URL)

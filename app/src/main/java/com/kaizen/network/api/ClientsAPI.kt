@@ -1,10 +1,9 @@
 package com.kaizen.network.api
 
 import com.kaizen.model.client.Client
+import com.kaizen.network.ApiUrls.CLIENTS_API_URL
 import retrofit2.Call
 import retrofit2.http.*
-
-private const val CLIENTS_API_URL = "api/Clients"
 
 interface ClientsAPI {
     @POST(CLIENTS_API_URL)

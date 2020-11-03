@@ -4,10 +4,9 @@ import com.kaizen.model.applicationuser.ApplicationUser
 import com.kaizen.model.applicationuser.ChangePasswordRequest
 import com.kaizen.model.applicationuser.LoginRequest
 import com.kaizen.model.applicationuser.ResetPasswordModel
+import com.kaizen.network.ApiUrls.USERS_API_URL
 import retrofit2.Call
 import retrofit2.http.*
-
-private const val USERS_API_URL = "api/Users"
 
 interface ApplicationUsersAPI {
     @POST(USERS_API_URL)

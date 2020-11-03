@@ -1,11 +1,10 @@
 package com.kaizen.network.api
 
 import com.kaizen.model.activityschedule.Activity
+import com.kaizen.network.ApiUrls.ACTIVITIES_API_URL
 import retrofit2.Call
 import retrofit2.http.*
 import java.util.*
-
-private const val ACTIVITIES_API_URL = "api/Activities"
 
 interface ActivitiesAPI {
     @POST(ACTIVITIES_API_URL)

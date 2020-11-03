@@ -2,11 +2,10 @@ package com.kaizen.network.api
 
 import com.kaizen.model.employee.Employee
 import com.kaizen.model.employee.EmployeeCharge
+import com.kaizen.network.ApiUrls.EMPLOYEES_API_URL
 import retrofit2.Call
 import retrofit2.http.*
 import java.util.*
-
-private const val EMPLOYEES_API_URL = "api/Employees"
 
 interface EmployeesAPI {
     @POST(EMPLOYEES_API_URL)

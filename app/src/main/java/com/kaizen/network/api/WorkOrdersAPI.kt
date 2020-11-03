@@ -2,10 +2,9 @@ package com.kaizen.network.api
 
 import com.kaizen.model.workorder.Sector
 import com.kaizen.model.workorder.WorkOrder
+import com.kaizen.network.ApiUrls.WORK_ORDERS_API_URL
 import retrofit2.Call
 import retrofit2.http.*
-
-private const val WORK_ORDERS_API_URL = "api/WorkOrders"
 
 interface WorkOrdersAPI {
     @POST(WORK_ORDERS_API_URL)
