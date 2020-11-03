@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:elevation="0dp"
+    app:cardBackgroundColor="@color/link_water"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:alpha="0.6"
+                android:src="@drawable/ic_baseline_pending_actions"
+                app:tint="@color/cerulean_blue" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/extra_small_spacing"
+                android:layout_marginEnd="@dimen/spacing_15dp"
+                android:alpha="0.3"
+                android:background="@color/mid_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_service_request_client"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/text_view_drawable_padding"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="Manolo S.A.S."
+                android:textColor="@color/black"
+                app:drawableStartCompat="@drawable/ic_baseline_person" />
+
+            <TextView
+                android:id="@+id/tv_service_request_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="@dimen/text_view_drawable_padding"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="2020/05/07 a las 05:00 PM"
+                android:textColor="@color/black"
+                app:drawableStartCompat="@drawable/ic_baseline_today" />
+
+            <TextView
+                android:id="@+id/tv_service_request_periodicity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="@dimen/text_view_drawable_padding"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="Semanal"
+                android:textColor="@color/black"
+                app:drawableStartCompat="@drawable/ic_baseline_repeat" />
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
