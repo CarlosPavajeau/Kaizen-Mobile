@@ -18,4 +18,11 @@
     <string name="certificates_menu_item_text">Certificados</string>
     <string name="settings_menu_item_text">Configuración</string>
     <string name="work_orders_menu_item_text">Ordenes de trabajo</string>
+    <string name="zero_text">0</string>
+    <string name="see_more">Ver más</string>
+    <string name="last_visited_clients">Últimos clientes visitados</string>
+    <string name="activities_applied_today">Activitdades aplicadas hoy</string>
+    <string name="generated_invoices">Facturas generadas</string>
+    <string name="last_visited_client_item_hour">A las %1$s</string>
+    <string name="last_visited_client_default_client_name">Client Name</string>
 </resources>

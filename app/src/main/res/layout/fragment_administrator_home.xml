@@ -5,4 +5,83 @@
     android:layout_height="match_parent"
     tools:context=".view.ui.fragments.AdministratorHomeFragment">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activities_applied_today"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/head_line" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/extra_small_spacing"
+            android:text="@string/zero_text"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_25"
+            android:text="@string/last_visited_clients"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/head_line" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_last_visited_clients"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/extra_small_spacing"
+            android:orientation="horizontal" />
+
+        <Button
+            android:id="@+id/bt_view_more_last_visited_clients"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/spacing_15dp"
+            android:gravity="center"
+            android:text="@string/see_more"
+            android:textColor="@color/genoa" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_30dp"
+            android:text="@string/generated_invoices"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/head_line" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_generated_invoices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/extra_small_spacing"
+            android:orientation="horizontal" />
+
+        <Button
+            android:id="@+id/bt_view_more_invoices"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/spacing_15dp"
+            android:gravity="center"
+            android:text="@string/see_more"
+            android:textColor="@color/genoa" />
+    </LinearLayout>
+
 </FrameLayout>

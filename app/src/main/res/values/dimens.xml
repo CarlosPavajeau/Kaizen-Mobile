@@ -7,4 +7,8 @@
     <dimen name="spacing_25">25dp</dimen>
     <dimen name="spacing_45">45dp</dimen>
     <dimen name="extra_small_spacing">10dp</dimen>
+    <dimen name="head_line">25sp</dimen>
+    <dimen name="spacing_15dp">15dp</dimen>
+    <dimen name="spacing_30dp">30dp</dimen>
+    <dimen name="text_view_drawable_padding">7dp</dimen>
 </resources>
