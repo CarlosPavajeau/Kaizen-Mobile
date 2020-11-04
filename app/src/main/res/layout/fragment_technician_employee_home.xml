@@ -5,4 +5,52 @@
     android:layout_height="match_parent"
     tools:context=".view.ui.fragments.TechnicianEmployeeHomeFragment">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/next_activity"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/head_line" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_next_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_15dp"
+            android:padding="@dimen/spacing_30dp"
+            tools:itemCount="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_45"
+            android:text="@string/today_pending_activities"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/head_line" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_today_pending_activities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/spacing_30dp" />
+
+        <Button
+            android:id="@+id/bt_view_more_today_pending_activities"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/spacing_15dp"
+            android:gravity="center"
+            android:text="@string/see_more"
+            android:textColor="@color/genoa" />
+    </LinearLayout>
 </FrameLayout>

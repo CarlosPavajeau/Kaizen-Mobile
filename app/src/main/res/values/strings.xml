@@ -25,4 +25,10 @@
     <string name="generated_invoices">Facturas generadas</string>
     <string name="last_visited_client_item_hour">A las %1$s</string>
     <string name="last_visited_client_default_client_name">Client Name</string>
+    <string name="next_activity">Próxima actividad</string>
+    <string name="pending_activities">Actividades pendientes</string>
+    <string name="applied_activities">Actividades aplicadas</string>
+    <string name="service_requests">Solicitudes de servicios</string>
+    <string name="client_requests">Solicitudes de clientes</string>
+    <string name="today_pending_activities">Actividades pendientes del día</string>
 </resources>
