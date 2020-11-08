@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".view.ui.fragments.LoginFragment">
+    tools:context=".view.ui.fragments.applicationuser.LoginFragment">
 
     <LinearLayout
         android:layout_width="match_parent"

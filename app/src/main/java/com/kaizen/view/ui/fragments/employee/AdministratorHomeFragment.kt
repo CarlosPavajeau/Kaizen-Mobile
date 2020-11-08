@@ -1,4 +1,4 @@
-package com.kaizen.view.ui.fragments
+package com.kaizen.view.ui.fragments.employee
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,15 +9,15 @@ import com.kaizen.R
 
 /**
  * A simple [Fragment] subclass.
- * Use the [OfficeEmployeeHomeFragment.newInstance] factory method to
+ * Use the [AdministratorHomeFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class OfficeEmployeeHomeFragment : Fragment() {
+class AdministratorHomeFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_office_employee_home, container, false)
+        return inflater.inflate(R.layout.fragment_administrator_home, container, false)
     }
 }

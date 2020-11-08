@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/office_employee_homeFragment"
-        android:name="com.kaizen.view.ui.fragments.OfficeEmployeeHomeFragment"
+        android:name="com.kaizen.view.ui.fragments.employee.OfficeEmployeeHomeFragment"
         android:label="fragment_office_employee_home"
         tools:layout="@layout/fragment_office_employee_home" />
 </navigation>

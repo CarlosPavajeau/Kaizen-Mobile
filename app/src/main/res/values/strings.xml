@@ -31,4 +31,6 @@
     <string name="service_requests">Solicitudes de servicios</string>
     <string name="client_requests">Solicitudes de clientes</string>
     <string name="today_pending_activities">Actividades pendientes del día</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

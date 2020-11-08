@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/login_fragment"
-        android:name="com.kaizen.view.ui.fragments.LoginFragment"
+        android:name="com.kaizen.view.ui.fragments.applicationuser.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" />
 </navigation>
