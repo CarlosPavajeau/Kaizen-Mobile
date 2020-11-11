@@ -7,7 +7,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
 import androidx.fragment.app.Fragment
+import com.auth0.android.jwt.JWT
 import com.google.android.material.textfield.TextInputLayout
 import com.kaizen.R
 import com.kaizen.model.applicationuser.ApplicationUser
@@ -29,6 +31,7 @@ import retrofit2.Response
 class LoginFragment : Fragment() {
     private lateinit var userOrEmailInput: TextInputLayout
     private lateinit var passwordInput: TextInputLayout
+    private lateinit var loginErrors: TextView
     private lateinit var applicationUserViewModel: ApplicationUserViewModel
 
     override fun onCreateView(
@@ -46,6 +49,7 @@ class LoginFragment : Fragment() {
 
         userOrEmailInput = view.findViewById(R.id.et_user_or_email)
         passwordInput = view.findViewById(R.id.et_password)
+        loginErrors = view.findViewById(R.id.tv_login_errors)
 
         val btLogin = view.findViewById<Button>(R.id.bt_login)
         btLogin.setOnClickListener {
@@ -58,6 +62,8 @@ class LoginFragment : Fragment() {
         val password = passwordInput.editText?.text.toString()
 
         if (userOrEmail.isNotEmpty() && password.isNotEmpty()) {
+            loginErrors.visibility = View.INVISIBLE
+
             val loginRequest = LoginRequest(userOrEmail, password)
             applicationUserViewModel.login(loginRequest, object : ApiCallback<ApplicationUser> {
                 override fun onResponse(result: Response<ApplicationUser>) {
@@ -86,7 +92,8 @@ class LoginFragment : Fragment() {
             applicationUser.id
         )
 
-        val intent: Intent? = when (applicationUser.role) {
+        val jwt = JWT(applicationUser.token)
+        val intent: Intent? = when (jwt.getClaim("role").asString()) {
             "Client" -> {
                 Intent(context, ClientActivity::class.java)
             }
@@ -96,13 +103,14 @@ class LoginFragment : Fragment() {
             "OfficeEmployee" -> {
                 Intent(context, OfficeEmployeeActivity::class.java)
             }
-            "TechnicianEmployee" -> {
+            "TechnicalEmployee" -> {
                 Intent(context, TechnicianEmployeeActivity::class.java)
             }
             else -> {
                 null
             }
         }
+
         if (intent != null) {
             startActivity(intent)
         } else {
@@ -111,6 +119,7 @@ class LoginFragment : Fragment() {
     }
 
     private fun onLoginFailure(error: String?) {
-        println(error)
+        loginErrors.text = error
+        loginErrors.visibility = View.VISIBLE
     }
 }
