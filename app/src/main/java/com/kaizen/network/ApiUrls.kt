@@ -11,5 +11,6 @@ object ApiUrls {
     const val SERVICE_INVOICES_API_URL = "api/ServiceInvoices"
     const val SERVICE_REQUESTS_API_URL = "api/ServiceRequests"
     const val SERVICES_API_URL = "api/Services"
+    const val STATISTICS_API_URL = "api/Statistics"
     const val WORK_ORDERS_API_URL = "api/WorkOrders"
 }
