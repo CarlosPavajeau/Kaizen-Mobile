@@ -8,6 +8,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_30dp"
         android:orientation="vertical">
 
         <TextView
@@ -19,6 +20,7 @@
             android:textSize="@dimen/head_line" />
 
         <TextView
+            android:id="@+id/tv_today_applied_activities"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/extra_small_spacing"
@@ -38,7 +40,7 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_last_visited_clients"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="@dimen/extra_small_spacing"
@@ -66,8 +68,8 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_generated_invoices"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="@dimen/extra_small_spacing"
             android:orientation="horizontal" />
