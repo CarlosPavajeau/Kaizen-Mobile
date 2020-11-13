@@ -33,7 +33,7 @@ class PendingServiceRequestAdapter(private val tapListener: TapListener<ServiceR
 
         holder.clientName.text = serviceRequest.client.tradeName
 
-        val dateFormat = SimpleDateFormat("", Locale.US)
+        val dateFormat = SimpleDateFormat("yyyy/MM/dd hh:mm a", Locale.US)
         holder.date.text = dateFormat.format(serviceRequest.date)
 
         holder.periodicity.text = serviceRequest.periodicity.toString()

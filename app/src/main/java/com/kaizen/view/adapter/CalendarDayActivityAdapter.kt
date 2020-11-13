@@ -31,7 +31,7 @@ class CalendarDayActivityAdapter(private val tapListener: TapListener<Activity>)
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val activity = activities[position]
 
-        val dateFormat = SimpleDateFormat("HH:mm a", Locale.US)
+        val dateFormat = SimpleDateFormat("hh:mm a", Locale.US)
         holder.activityHour.text = dateFormat.format(activity.date)
         holder.activityPeriodicity.text = activity.periodicity.toString()
         holder.activityEmployees.text =

@@ -36,7 +36,7 @@ class PendingActivityAdapter(private val tapListener: TapListener<Activity>) :
         val dateFormat = SimpleDateFormat("yyyy/MM/dd", Locale.US)
         holder.activityDate.text = dateFormat.format(activity.date)
 
-        val hourFormat = SimpleDateFormat("HH:mm a", Locale.US)
+        val hourFormat = SimpleDateFormat("hh:mm a", Locale.US)
         holder.activityHour.text = hourFormat.format(activity.date)
 
         holder.itemView.setOnClickListener {

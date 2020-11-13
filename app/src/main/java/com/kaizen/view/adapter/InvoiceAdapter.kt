@@ -36,7 +36,7 @@ class InvoiceAdapter(private val tapListener: TapListener<ServiceInvoice>) :
         holder.invoiceState.text = invoice.state.toString()
         holder.totalInvoice.text = invoice.total.toString()
 
-        val dateFormat = SimpleDateFormat("yyyy/MM/dd HH:mm a", Locale.US)
+        val dateFormat = SimpleDateFormat("yyyy/MM/dd hh:mm a", Locale.US)
         holder.invoiceDate.text = dateFormat.format(invoice.generationDate)
 
         holder.itemView.setOnClickListener {

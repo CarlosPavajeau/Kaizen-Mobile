@@ -32,7 +32,7 @@ class LastClientAdapter(private val tapListener: TapListener<Activity>) :
 
         holder.clientName.text = activity.client.firstName
 
-        val dateFormat = SimpleDateFormat("HH:mm a", Locale.US)
+        val dateFormat = SimpleDateFormat("hh:mm a", Locale.US)
         holder.visitHour.text = dateFormat.format(activity.date)
 
         holder.itemView.setOnClickListener {

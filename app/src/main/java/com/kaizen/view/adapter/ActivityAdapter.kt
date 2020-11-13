@@ -31,7 +31,7 @@ class ActivityAdapter(private val tapListener: TapListener<Activity>) :
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val activity = activities[position]
 
-        val dateFormat = SimpleDateFormat("yyyy/MM/dd HH:mm a", Locale.US)
+        val dateFormat = SimpleDateFormat("yyyy/MM/dd hh:mm a", Locale.US)
         holder.activityDate.text = dateFormat.format(activity.date)
         holder.activityPeriodicity.text = activity.periodicity.toString()
         holder.activityEmployees.text =
