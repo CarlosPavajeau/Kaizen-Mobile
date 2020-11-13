@@ -13,7 +13,7 @@ data class ServiceInvoice(
     @SerializedName("id")
     var id: Int = 0
 
-    @SerializedName("generationDate ")
+    @SerializedName("generationDate")
     lateinit var generationDate: Date
 
     @SerializedName("client")
