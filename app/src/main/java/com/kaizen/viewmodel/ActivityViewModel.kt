@@ -34,6 +34,10 @@ class ActivityViewModel(context: Context) : ViewModel() {
         activityService.getPendingClientActivities(clientId, apiCallback)
     }
 
+    fun getAppliedClientActivities(clientId: String, apiCallback: ApiCallback<List<Activity>>) {
+        activityService.getAppliedClientActivities(clientId, apiCallback)
+    }
+
     fun updateActivity(activity: Activity, apiCallback: ApiCallback<Activity>) {
         activityService.updateActivity(activity, apiCallback)
     }

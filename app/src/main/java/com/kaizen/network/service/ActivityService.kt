@@ -36,6 +36,10 @@ class ActivityService(context: Context) {
         activitiesApi.getPendingClientActivities(clientId).enqueue(Callback(apiCallback))
     }
 
+    fun getAppliedClientActivities(clientId: String, apiCallback: ApiCallback<List<Activity>>) {
+        activitiesApi.getAppliedClientActivities(clientId).enqueue(Callback(apiCallback))
+    }
+
     fun updateActivity(activity: Activity, apiCallback: ApiCallback<Activity>) {
         activitiesApi.updateActivity(activity.code, activity).enqueue(Callback(apiCallback))
     }

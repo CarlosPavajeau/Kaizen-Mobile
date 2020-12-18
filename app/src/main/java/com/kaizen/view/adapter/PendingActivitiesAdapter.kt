@@ -11,8 +11,8 @@ import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.collections.ArrayList
 
-class PendingActivityAdapter(private val tapListener: TapListener<Activity>) :
-    RecyclerView.Adapter<PendingActivityAdapter.ViewHolder>() {
+class PendingActivitiesAdapter(private val tapListener: TapListener<Activity>) :
+    RecyclerView.Adapter<PendingActivitiesAdapter.ViewHolder>() {
     var pendingActivities = ArrayList<Activity>()
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

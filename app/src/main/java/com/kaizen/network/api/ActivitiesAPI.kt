@@ -25,6 +25,9 @@ interface ActivitiesAPI {
     @GET("$ACTIVITIES_API_URL/ClientActivities/{clientId}")
     fun getPendingClientActivities(@Path("clientId") clientId: String): Call<List<Activity>>
 
+    @GET("$ACTIVITIES_API_URL/AppliedClientActivities/{clientId}")
+    fun getAppliedClientActivities(@Path("clientId") clientId: String): Call<List<Activity>>
+
     @PUT("$ACTIVITIES_API_URL/{activityCode}")
     fun updateActivity(
         @Path("activityCode") activityCode: Int,

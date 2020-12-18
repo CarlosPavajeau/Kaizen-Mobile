@@ -39,7 +39,7 @@
             android:id="@+id/rv_pending_activities"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal" />
+            android:orientation="vertical" />
 
         <Button
             android:id="@+id/bt_view_more_pending_activities"

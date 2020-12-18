@@ -121,5 +121,6 @@ class LoginFragment : Fragment() {
     private fun onLoginFailure(error: String?) {
         loginErrors.text = error
         loginErrors.visibility = View.VISIBLE
+        println(error)
     }
 }
