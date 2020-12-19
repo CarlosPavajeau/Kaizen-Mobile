@@ -1,8 +1,9 @@
 package com.kaizen.model.invoice
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
-enum class PaymentMethod {
+enum class PaymentMethod : Serializable {
     @SerializedName("0")
     None,
 

@@ -1,12 +1,13 @@
 package com.kaizen.model.employee
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 data class Employee(
     @SerializedName("id") val id: String,
     @SerializedName("firstName") val firstName: String,
     @SerializedName("lastName") val lastName: String
-) {
+) : Serializable {
     @SerializedName("secondName")
     lateinit var secondName: String
 

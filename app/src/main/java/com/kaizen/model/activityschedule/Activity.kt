@@ -5,11 +5,12 @@ import com.kaizen.model.client.Client
 import com.kaizen.model.employee.Employee
 import com.kaizen.model.service.Service
 import com.kaizen.model.servicerequest.PeriodicityType
+import java.io.Serializable
 import java.util.*
 
 data class Activity(
     @SerializedName("date") val date: Date
-) {
+) : Serializable {
     @SerializedName("code")
     var code: Int = 0
 

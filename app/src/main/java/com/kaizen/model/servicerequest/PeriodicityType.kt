@@ -1,8 +1,9 @@
 package com.kaizen.model.servicerequest
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
-enum class PeriodicityType {
+enum class PeriodicityType : Serializable {
     @SerializedName("0")
     Biweekly,
 

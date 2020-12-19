@@ -1,8 +1,9 @@
 package com.kaizen.model.client
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
-enum class ClientState {
+enum class ClientState : Serializable {
     @SerializedName("0")
     Pending,
 

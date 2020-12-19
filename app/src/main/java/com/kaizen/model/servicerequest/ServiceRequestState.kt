@@ -1,6 +1,8 @@
 package com.kaizen.model.servicerequest
 
-enum class ServiceRequestState {
+import java.io.Serializable
+
+enum class ServiceRequestState : Serializable {
     Pending,
     Accepted,
     Rejected,

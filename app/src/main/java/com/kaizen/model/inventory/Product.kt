@@ -1,12 +1,13 @@
 package com.kaizen.model.inventory
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 data class Product(
     @SerializedName("code") val code: String,
     @SerializedName("name") val name: String,
     @SerializedName("amount") val amount: Int
-) {
+) : Serializable {
     @SerializedName("presentation")
     lateinit var presentation: String
 

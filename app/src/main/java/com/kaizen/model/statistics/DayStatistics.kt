@@ -1,12 +1,13 @@
 package com.kaizen.model.statistics
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 import java.util.*
 
 data class DayStatistics(
     @SerializedName("id") val id: Int,
     @SerializedName("date") val date: Date
-) {
+) : Serializable {
     @SerializedName("appliedActivities")
     var appliedActivities: Int = 0
 

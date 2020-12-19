@@ -1,11 +1,12 @@
 package com.kaizen.model.servicerequest
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 data class Periodicity(
     @SerializedName("name") val name: String,
     @SerializedName("type") val type: PeriodicityType
-)
+) : Serializable
 
 val PERIODICITIES = arrayOf(
     Periodicity("Quincenal", PeriodicityType.Biweekly),

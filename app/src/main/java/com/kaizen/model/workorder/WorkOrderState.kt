@@ -1,8 +1,9 @@
 package com.kaizen.model.workorder
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
-enum class WorkOrderState {
+enum class WorkOrderState : Serializable {
     @SerializedName("0")
     Generated,
 

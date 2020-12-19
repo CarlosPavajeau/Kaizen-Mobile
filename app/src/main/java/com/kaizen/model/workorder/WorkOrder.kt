@@ -3,11 +3,12 @@ package com.kaizen.model.workorder
 import com.google.gson.annotations.SerializedName
 import com.kaizen.model.activityschedule.Activity
 import com.kaizen.model.employee.Employee
+import java.io.Serializable
 import java.util.*
 
 data class WorkOrder(
     @SerializedName("arrivalTime") val arrivalTime: Date
-) {
+) : Serializable {
     @SerializedName("code")
     var code: Int = 0
 

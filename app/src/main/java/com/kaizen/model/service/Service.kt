@@ -4,11 +4,12 @@ import com.google.gson.annotations.SerializedName
 import com.kaizen.model.employee.Employee
 import com.kaizen.model.inventory.Equipment
 import com.kaizen.model.inventory.Product
+import java.io.Serializable
 
 data class Service(
     @SerializedName("code") val code: String,
     @SerializedName("name") val name: String
-) {
+) : Serializable {
     @SerializedName("cost")
     var cost: Float = 0.0F
 

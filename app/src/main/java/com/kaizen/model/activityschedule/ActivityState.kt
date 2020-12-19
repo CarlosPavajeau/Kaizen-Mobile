@@ -1,8 +1,9 @@
 package com.kaizen.model.activityschedule
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
-enum class ActivityState {
+enum class ActivityState : Serializable {
     @SerializedName("0")
     Pending,
 
