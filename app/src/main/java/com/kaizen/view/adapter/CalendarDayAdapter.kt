@@ -44,4 +44,17 @@ class CalendarDayAdapter(private val tapListener: TapListener<Activity>) :
     override fun getItemCount(): Int {
         return activityDays.size
     }
+
+    fun updateData(activities: List<Activity>) {
+        activityDays.clear()
+
+        var mapActivities = activities.groupBy { it.date.day }
+        mapActivities.forEach {
+            var activityDay = ActivityDay("Day", it.key)
+            activityDay.activities = it.value
+            activityDay.date = it.value[0].date
+
+            activityDays.add(activityDay)
+        }
+    }
 }

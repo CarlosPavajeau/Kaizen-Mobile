@@ -8,6 +8,44 @@
     <fragment
         android:id="@+id/administrator_home_fragment"
         android:name="com.kaizen.view.ui.fragments.employee.AdministratorHomeFragment"
-        android:label="fragment_administrator_home"
-        tools:layout="@layout/fragment_administrator_home" />
+        android:label="administrator_home_fragment"
+        tools:layout="@layout/fragment_administrator_home">
+        <action
+            android:id="@+id/action_administrator_home_fragment_to_activity_detail_fragment"
+            app:destination="@id/activity_detail_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/schedule_fragment"
+        android:name="com.kaizen.view.ui.fragments.activityschedule.CalendarFragment"
+        android:label="fragment_calendar"
+        tools:layout="@layout/fragment_calendar">
+        <action
+            android:id="@+id/action_schedule_fragment_to_activity_detail_fragment"
+            app:destination="@id/activity_detail_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/employees_fragment"
+        android:name="com.kaizen.view.ui.fragments.employee.EmployeesFragment"
+        android:label="fragment_employees"
+        tools:layout="@layout/fragment_employees" />
+    <fragment
+        android:id="@+id/services_fragment"
+        android:name="com.kaizen.view.ui.fragments.service.ServicesFragment"
+        android:label="fragment_services"
+        tools:layout="@layout/fragment_services" />
+    <fragment
+        android:id="@+id/clients_fragment"
+        android:name="com.kaizen.view.ui.fragments.client.ClientsFragment"
+        android:label="fragment_clients"
+        tools:layout="@layout/fragment_clients" />
+    <fragment
+        android:id="@+id/inventory_fragment"
+        android:name="com.kaizen.view.ui.fragments.product.ProductsFragment"
+        android:label="fragment_products"
+        tools:layout="@layout/fragment_products" />
+    <fragment
+        android:id="@+id/activity_detail_fragment"
+        android:name="com.kaizen.view.ui.fragments.activityschedule.ActivityDetailFragment"
+        android:label="fragment_activity_detail"
+        tools:layout="@layout/fragment_activity_detail" />
 </navigation>

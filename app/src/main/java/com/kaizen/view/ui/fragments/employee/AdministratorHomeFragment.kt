@@ -5,7 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.kaizen.R
@@ -135,6 +137,9 @@ class AdministratorHomeFragment : Fragment(), TapListener<Activity> {
     }
 
     override fun onTap(data: Activity) {
-        println("Data: $data")
+        findNavController().navigate(
+            R.id.activity_detail_fragment,
+            bundleOf("activity" to data.code)
+        )
     }
 }
